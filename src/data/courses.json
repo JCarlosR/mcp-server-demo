@@ -1,0 +1,336 @@
+{
+  "source": "pym.series snapshot, public=0",
+  "courses": [
+    {
+      "id": 15,
+      "title": "Laravel desde cero: Desarrolla y publica una app de pedidos",
+      "short_name": "Aprende Laravel",
+      "slug": "curso-laravel-5-desde-cero-desarrolla-publica-una-app-pedidos",
+      "url": "https://programacionymas.com/series/curso-laravel-5-desde-cero-desarrolla-publica-una-app-pedidos",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Laravel",
+      "pitch": "Aprende Laravel desde cero y desarrolla aplicaciones web reales, en tiempo récord, de la mano de Laravel.",
+      "description": "Aprende Laravel desarrollando una aplicación de pedidos en línea, desde cero y paso a paso. El curso explica el desarrollo, y culmina con la publicación de la aplicación web (deploy a un servidor y cómo asociar un dominio).",
+      "topics": [
+        "laravel",
+        "php",
+        "framework",
+        "deploy",
+        "vps",
+        "git",
+        "pedidos"
+      ],
+      "audience": [
+        "Personas interesadas en desarrollar su primera aplicación web con Laravel",
+        "Desarrolladores web que conocen PHP pero no han usado antes un framework"
+      ],
+      "learn": [
+        "Desarrollar aplicaciones web usando Laravel",
+        "Conocer las ventajas de trabajar con un framework",
+        "Envíar mails (para informar sobre nuevos pedidos)",
+        "Integrar una plantilla a un proyecto Laravel",
+        "Usar Git en tus proyectos",
+        "Gestionar repositorios remotos con Github",
+        "Configurar un VPS y asociar un dominio a la aplicación",
+        "Agilizar tu desarrollo con el uso de comandos para Sublime Text (opcional)",
+        "Conocer sobre el servidor web Apache",
+        "Conocer más sobre registros DNS",
+        "Conocer sobre la vulnerabilidad CSRF y cómo evitarla",
+        "Subir y eliminar archivos en un proyecto web",
+        "Cómo hacer deploy de una aplicación web desarrollada con Laravel",
+        "Comprender el significado de trabajar en un entorno local y otro de producción",
+        "Hacer modificaciones al sistema de autenticación de Laravel"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Laravel y OAuth 2: Login con Facebook, Twitter, Google, etc",
+      "short_name": "Laravel y OAuth2",
+      "slug": "laravel-y-oauth-2-facebook-twitter-google",
+      "url": "https://programacionymas.com/series/laravel-y-oauth-2-facebook-twitter-google",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Laravel",
+      "pitch": "Veamos cómo implementar un login mediante redes sociales! Aprende y aplica esto sobre cualquier proyecto Laravel.",
+      "description": "Desarrollemos un monitor de precios! Los usuarios ingresan vía redes sociales, ingresan datos y consultan reportes.",
+      "topics": [
+        "laravel",
+        "oauth",
+        "oauth2",
+        "socialite",
+        "facebook",
+        "twitter",
+        "google",
+        "login"
+      ],
+      "audience": [
+        "Personas interesadas en implementar un login con redes sociales",
+        "Desarrolladores interesados en conocer más sobre OAuth 2 como mecanismo de autorización"
+      ],
+      "learn": [
+        "Aprenderás qué es OAuth, y cómo funciona con las principales redes sociales y servicios",
+        "Serás capaz de implementar un login vía redes sociales y servicios en tus proyectos Laravel",
+        "Conocerás y comprenderás perfectamente el funcionamiento del paquete Laravel Socialite",
+        "Aprenderás paso a paso cómo hacer un login vía Facebook, Twitter, Google+ (aplicable también para Youtube, Steam y muchos otros proveedores)"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Desarrolla 1 Chatbot Messenger y aprende Python en el camino",
+      "short_name": "Aprende Python",
+      "slug": "desarrolla-chatbot-messenger-y-aprende-python",
+      "url": "https://programacionymas.com/series/desarrolla-chatbot-messenger-y-aprende-python",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Python",
+      "pitch": "Desarrolla tu primer Chatbot para Facebook Messenger sobre Google Cloud, y aprende Python en el camino!",
+      "description": "Desarrolla tu primer Chatbot usando Python, Google Cloud Storage y Google App Engine",
+      "topics": [
+        "python",
+        "chatbot",
+        "messenger",
+        "facebook",
+        "google cloud",
+        "app engine"
+      ],
+      "audience": [
+        "Personas interesadas en aprender Python mientras desarrollan un Chatbot para Facebook Messenger",
+        "Desarrolladores que quieran conocer más sobre el desarrollo de Chatbots para Facebook Messenger",
+        "Personas que quieran crear su primer Chatbot en base a preguntas y respuestas"
+      ],
+      "learn": [
+        "Desarrollar un primer Chatbot completamente funcional para Facebook Messenger",
+        "Personalizar un Chatbot fácilmente mediante programación",
+        "Reforzar sus conocimientos sobre Python como lenguaje de programación"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Javascript 2024: El curso práctico y completo",
+      "short_name": "Aprende Javascript",
+      "slug": "javascript-curso-practico-y-completo",
+      "url": "https://programacionymas.com/series/javascript-curso-practico-y-completo",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Javascript",
+      "pitch": "Domina JS con este curso práctico y completo! Fundamentos, ejemplos reales, ES6+, POO, Ajax, Webpack, NPM y más.",
+      "description": "Domina Javascript desarrollando 3 juegos! Aprende ES6+, POO, Módulos, Ajax, Webpack, Babel, NPM y muchos más conceptos.",
+      "topics": [
+        "javascript",
+        "js",
+        "es6",
+        "webpack",
+        "npm",
+        "ajax",
+        "poo"
+      ],
+      "audience": [
+        "Personas interesadas en aprender a programar con Javascript",
+        "Personas que quieren aprender Javascript de forma práctica"
+      ],
+      "learn": [
+        "Crearás tus primeros juegos mientras aprendes Javascript",
+        "Aprenderás a desarrollar aplicaciones haciendo uso de Javascript",
+        "Estarás listo para crear páginas que interactúen con los usuarios que la visitan",
+        "No volverás a confundir Javascript con algún otro lenguaje de programación",
+        "Tendrás una sólida base para profundizar en temas más complejos"
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Curso práctico de Docker y Microservicios (apto para todos)",
+      "short_name": "Docker y Microservicios",
+      "slug": "curso-practico-de-docker-y-microservicios-desde-cero",
+      "url": "https://programacionymas.com/series/curso-practico-de-docker-y-microservicios-desde-cero",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Herramientas",
+      "pitch": "Aprende por qué es importante y cómo funciona Docker, con este nuevo curso práctico!",
+      "description": "Aprende por qué es importante, cómo funciona, y cómo empezar usar Docker en tus proyectos!",
+      "topics": [
+        "herramientas",
+        "docker",
+        "microservicios",
+        "microservices",
+        "contenedores",
+        "containers"
+      ],
+      "audience": [
+        "Desarrolladores web (frontend o backend)",
+        "Desarrolladores móviles",
+        "Desarrolladores de videojuegos",
+        "Apto para estudiantes de todos los niveles"
+      ],
+      "learn": [
+        "Diferencia entre aplicaciones monolíticas y aplicaciones basadas en microservicios",
+        "La importancia de una arquitectura basada en microservicios",
+        "Qué es Docker y cómo empezar a usarlo",
+        "Cómo crear contenedores de Docker a partir de imágenes",
+        "Cómo descargar imágenes oficiales pero también a crear tus propias imágenes"
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Realtime Messenger usando Laravel, Vue, Bootstrap 4 y Pusher",
+      "short_name": "Laravel y Vue",
+      "slug": "realtime-messenger-usando-laravel-vue-bootstrap-pusher",
+      "url": "https://programacionymas.com/series/realtime-messenger-usando-laravel-vue-bootstrap-pusher",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Laravel",
+      "pitch": "Desarrollemos un Messenger! Aprende sobre Channels, Queues, Vuex, JWT, Sesiones, BootstrapVue y mucho más.",
+      "description": "Desarrollemos una app completa! Aprende sobre Channels, Queues, Vuex, JWT, Sesiones, BootstrapVue y mucho más.",
+      "topics": [
+        "laravel",
+        "vue",
+        "pusher",
+        "jwt",
+        "realtime",
+        "bootstrap",
+        "vuex"
+      ],
+      "audience": [
+        "Personas que quieren aprender a desarrollar aplicaciones web profesionales",
+        "Desarrolladores que quieran aprender a usar Laravel en conjunto con Vue"
+      ],
+      "learn": [
+        "Desarrollarás aplicaciones web profesionales con funcionalidad en tiempo real (real time)",
+        "Serás capaz de integrar Vue en tus proyectos Laravel (de forma progresiva)",
+        "Dominarás tecnologías de vanguardia, tanto para backend (Laravel) como frontend (Vue)",
+        "Dominarás conceptos relacionados a los sistemas de autenticación",
+        "Aprenderás a crear componentes de Vue y a intercambiar datos correctamente",
+        "Conocerás de cerca los tipos de canales que se pueden crear para comunicación en tiempo real",
+        "Reconocerás cuándo es conveniente aplicar Vuex o usar un EventBus"
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Curso intensivo de Laravel y Android usando JWT y Kotlin",
+      "short_name": "Laravel y Android",
+      "slug": "curso-intensivo-de-laravel-y-android-usando-jwt-y-kotlin",
+      "url": "https://programacionymas.com/series/curso-intensivo-de-laravel-y-android-usando-jwt-y-kotlin",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Android",
+      "pitch": "Curso intensivo. Incluye el desarrollo de una API, su consumo, y autenticación vía JWT. También vemos Kotlin desde 0.",
+      "description": "Desarrollemos 1 app de Reserva de Citas! Gestión, reportes, API, JWT, notificaciones, Programación Funcional y mucho más",
+      "topics": [
+        "android",
+        "laravel",
+        "kotlin",
+        "jwt",
+        "api",
+        "java"
+      ],
+      "audience": [
+        "Personas interesadas en aprender a desarrrollar aplicaciones móviles",
+        "Programadores que desean iniciar su camino en el desarrollo de aplicaciones Android nativas",
+        "Desarrolladores que desean aprender cómo comunicar un proyecto Laravel con Android a través de una API"
+      ],
+      "learn": [
+        "Aprenderás a crear tus propias aplicaciones Android nativas",
+        "Conocerás qué es y como funciona una API",
+        "Trabajarás de forma organizada usando Android Studio",
+        "Mejorarás tus conocimientos de Java y Kotlin",
+        "Conocerás cómo implementar JSON Web Tokens (en Laravel y Android)"
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Guía completa para actualizar Laravel hasta la última versión",
+      "short_name": "Laravel Upgrade",
+      "slug": "actualizar-laravel-hasta-ultima-version",
+      "url": "https://programacionymas.com/series/actualizar-laravel-hasta-ultima-version",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Laravel",
+      "pitch": "Actualiza tus proyectos desde cualquier versión hasta la última versión estable de Laravel.",
+      "description": "Aprende a actualizar tus proyectos Laravel, desde la versión en la que se encuentran hasta la última versión estable.",
+      "topics": [
+        "laravel",
+        "upgrade",
+        "actualizar",
+        "migración",
+        "versiones"
+      ],
+      "audience": [
+        "Desarrolladores Laravel, tanto para principiantes como aquellos que ya tienen cierta experiecia",
+        "Estudiantes y desarrolladores web que buscan aprender más sobre Laravel como framework"
+      ],
+      "learn": [
+        "Actualizar de manera exitosa proyectos Laravel desde versiones antiguas a la más actual",
+        "Revisar e interpretar las guías de actualización oficiales de Laravel",
+        "Comparar con precisión los cambios entre una versión de Laravel y otra",
+        "Aprender a corregir errores durante el proceso de actualización a una versión más reciente de Laravel"
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Aprende Vue 3, Vite, VueRouter, Vuetify, Pinia y TypeScript",
+      "short_name": "Aprende Vue 3",
+      "slug": "aprende-vue-3-vite-vuerouter-vuetify-pinia-y-typescript",
+      "url": "https://programacionymas.com/series/aprende-vue-3-vite-vuerouter-vuetify-pinia-y-typescript",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Frontend",
+      "pitch": "Nuevo curso! Aprende Vite, Pinia, Vuetify, Vue Router y TypeScript. Desarrolla un eCommerce desde cero.",
+      "description": "Aprende Vue.js, Vuetify y TS desarrollando un eCcommerce, con las mejores prácticas de desarrollo.",
+      "topics": [
+        "frontend",
+        "vue",
+        "vue3",
+        "vite",
+        "pinia",
+        "vuetify",
+        "typescript",
+        "ecommerce"
+      ],
+      "audience": [
+        "Desarrolladores web que quieren dar el siguiente paso en su carrera",
+        "Personas interesadas en aprender a programar una aplicación web desde cero",
+        "Programadores interesados en buenas prácticas de desarrollo y escribir código en inglés",
+        "Profesionales interesados en aprender un framework moderno y mejorar su salario"
+      ],
+      "learn": [
+        "Todos los conceptos fundamentales de Vue 3",
+        "Gestionar el estado de un proyecto de VueJS con Pinia",
+        "Definir rutas frontend y parámetros de ruta usando Vue Router",
+        "Usar un framework de components, como Vuetify"
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Curso de Bases de Datos y SQL (Apto para todos)",
+      "short_name": "Aprende SQL",
+      "slug": "bases-de-datos-y-sql",
+      "url": "https://programacionymas.com/series/bases-de-datos-y-sql",
+      "level": "Aprendiz",
+      "level_en": "beginner",
+      "skill": "Bases de datos",
+      "pitch": "Aprende SQL y Bases de datos. Curso totalmente práctico. Usa JOINs, subqueries, UNION, y mucho más.",
+      "description": "Todo lo que necesitas saber para Consultar y Gestionar bases de datos. Aprende SQL y mejora tus oportunidades profesionales.",
+      "topics": [
+        "bases de datos",
+        "sql",
+        "mysql",
+        "joins",
+        "database"
+      ],
+      "audience": [
+        "Estudiantes y/o profesionales que deseen adquirir una comprensión sólida sobre bases de datos y SQL.",
+        "Programadores o desarrolladores de software que deseen profundizar más sobre los fundamentos de las bases de datos relacionales.",
+        "Personas interesadas en aprender los fundamentos de bases de datos y cómo utilizar SQL para gestionar, consultar y crear bases de datos de manera eficiente.",
+        "Profesionales que deseen capacitarse como futuros analistas de datos, utilizando SQL para generar informes y reportes estadísticos básicos.",
+        "Contadores, administradores y profesionales de negocios,  que deseen aprender a consultar y analizar datos de manera conveniente, para mejorar la toma de decisiones."
+      ],
+      "learn": [
+        "Comprende los fundamentos de las bases de datos relacionales y SQL.",
+        "Domina la sintaxis de SQL y los comandos SQL más comunes.",
+        "Consulta y recupera datos de una sola tabla, de múltiples tablas y de múltiples bases de datos.",
+        "Crea y modifica tablas de bases de datos, claves primarias simples y compuestas, y claves foráneas.",
+        "Implementa restricciones de integridad de datos y asegura la consistencia de los datos."
+      ]
+    }
+  ]
+}
