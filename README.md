@@ -4,7 +4,7 @@ Official MCP TypeScript SDK v2 server (`@modelcontextprotocol/server`) with Stre
 
 Tools:
 
-- `current_time` — server local time, optional IANA timezone
+- `current_time` — current date and time in America/Lima
 - `recommend_courses` — Programación y Más paid courses (snapshot of `pym.series` where `public = 0`)
 
 Requires **Node.js 20+**. This repo includes `.nvmrc`.
@@ -49,7 +49,13 @@ Claude Desktop speaks stdio, so bridge to HTTP with `mcp-remote`:
 }
 ```
 
-Config file: `~/Library/Application Support/Claude/claude_desktop_config.json`
+Config file (`claude_desktop_config.json`):
+
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- Linux: `~/.config/Claude/claude_desktop_config.json`
+
+Claude Desktop can create or open that file via Settings → Developer → Edit Config.
 
 ## Catalog
 

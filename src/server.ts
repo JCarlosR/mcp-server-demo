@@ -13,29 +13,15 @@ export function createServer(): McpServer {
     "current_time",
     {
       title: "Current time",
-      description:
-        "Get the current date and time. Defaults to the server timezone; pass an IANA timezone such as America/Mexico_City to convert.",
-      inputSchema: z.object({
-        timezone: z
-          .string()
-          .optional()
-          .describe("Optional IANA timezone, e.g. America/Lima or UTC"),
-      }),
+      description: "Get the current date and time in America/Lima (the server timezone).",
+      inputSchema: z.object({}),
       annotations: { readOnlyHint: true, idempotentHint: true },
     },
-    async ({ timezone }) => {
-      try {
-        const time = getCurrentTime(timezone);
-        return {
-          content: [{ type: "text", text: formatCurrentTime(time) }],
-        };
-      } catch (error) {
-        const message = error instanceof Error ? error.message : "Failed to resolve timezone";
-        return {
-          content: [{ type: "text", text: message }],
-          isError: true,
-        };
-      }
+    async () => {
+      const time = getCurrentTime();
+      return {
+        content: [{ type: "text", text: formatCurrentTime(time) }],
+      };
     },
   );
 

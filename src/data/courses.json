@@ -2,10 +2,8 @@
   "source": "pym.series snapshot, public=0",
   "courses": [
     {
-      "id": 15,
       "title": "Laravel desde cero: Desarrolla y publica una app de pedidos",
       "short_name": "Aprende Laravel",
-      "slug": "curso-laravel-5-desde-cero-desarrolla-publica-una-app-pedidos",
       "url": "https://programacionymas.com/series/curso-laravel-5-desde-cero-desarrolla-publica-una-app-pedidos",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -44,10 +42,8 @@
       ]
     },
     {
-      "id": 19,
       "title": "Laravel y OAuth 2: Login con Facebook, Twitter, Google, etc",
       "short_name": "Laravel y OAuth2",
-      "slug": "laravel-y-oauth-2-facebook-twitter-google",
       "url": "https://programacionymas.com/series/laravel-y-oauth-2-facebook-twitter-google",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -76,10 +72,8 @@
       ]
     },
     {
-      "id": 20,
       "title": "Desarrolla 1 Chatbot Messenger y aprende Python en el camino",
       "short_name": "Aprende Python",
-      "slug": "desarrolla-chatbot-messenger-y-aprende-python",
       "url": "https://programacionymas.com/series/desarrolla-chatbot-messenger-y-aprende-python",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -106,10 +100,8 @@
       ]
     },
     {
-      "id": 21,
       "title": "Javascript 2024: El curso práctico y completo",
       "short_name": "Aprende Javascript",
-      "slug": "javascript-curso-practico-y-completo",
       "url": "https://programacionymas.com/series/javascript-curso-practico-y-completo",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -138,10 +130,8 @@
       ]
     },
     {
-      "id": 22,
       "title": "Curso práctico de Docker y Microservicios (apto para todos)",
       "short_name": "Docker y Microservicios",
-      "slug": "curso-practico-de-docker-y-microservicios-desde-cero",
       "url": "https://programacionymas.com/series/curso-practico-de-docker-y-microservicios-desde-cero",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -171,10 +161,8 @@
       ]
     },
     {
-      "id": 23,
       "title": "Realtime Messenger usando Laravel, Vue, Bootstrap 4 y Pusher",
       "short_name": "Laravel y Vue",
-      "slug": "realtime-messenger-usando-laravel-vue-bootstrap-pusher",
       "url": "https://programacionymas.com/series/realtime-messenger-usando-laravel-vue-bootstrap-pusher",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -205,10 +193,8 @@
       ]
     },
     {
-      "id": 24,
       "title": "Curso intensivo de Laravel y Android usando JWT y Kotlin",
       "short_name": "Laravel y Android",
-      "slug": "curso-intensivo-de-laravel-y-android-usando-jwt-y-kotlin",
       "url": "https://programacionymas.com/series/curso-intensivo-de-laravel-y-android-usando-jwt-y-kotlin",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -237,10 +223,8 @@
       ]
     },
     {
-      "id": 25,
       "title": "Guía completa para actualizar Laravel hasta la última versión",
       "short_name": "Laravel Upgrade",
-      "slug": "actualizar-laravel-hasta-ultima-version",
       "url": "https://programacionymas.com/series/actualizar-laravel-hasta-ultima-version",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -266,10 +250,8 @@
       ]
     },
     {
-      "id": 26,
       "title": "Aprende Vue 3, Vite, VueRouter, Vuetify, Pinia y TypeScript",
       "short_name": "Aprende Vue 3",
-      "slug": "aprende-vue-3-vite-vuerouter-vuetify-pinia-y-typescript",
       "url": "https://programacionymas.com/series/aprende-vue-3-vite-vuerouter-vuetify-pinia-y-typescript",
       "level": "Aprendiz",
       "level_en": "beginner",
@@ -300,10 +282,8 @@
       ]
     },
     {
-      "id": 27,
       "title": "Curso de Bases de Datos y SQL (Apto para todos)",
       "short_name": "Aprende SQL",
-      "slug": "bases-de-datos-y-sql",
       "url": "https://programacionymas.com/series/bases-de-datos-y-sql",
       "level": "Aprendiz",
       "level_en": "beginner",

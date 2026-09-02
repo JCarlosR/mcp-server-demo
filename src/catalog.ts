@@ -1,10 +1,8 @@
 import { readFileSync } from "node:fs";
 
 export type Course = {
-  id: number;
   title: string;
   short_name: string | null;
-  slug: string;
   url: string;
   level: string;
   level_en: string;
@@ -85,7 +83,7 @@ export function recommendCourses(topic: string, level?: string, limit = 5): Cour
       return { course, score };
     })
     .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score || a.course.id - b.course.id);
+    .sort((a, b) => b.score - a.score || a.course.title.localeCompare(b.course.title));
 
   return scored.slice(0, limit).map((row) => row.course);
 }
