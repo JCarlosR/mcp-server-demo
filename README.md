@@ -36,7 +36,15 @@ After you deploy a public HTTPS URL, use that `url` instead of localhost.
 
 ## Claude Desktop
 
-Claude Desktop’s config file only launches **local** (stdio) processes. Point it at this HTTP server with `mcp-remote`:
+### Local development
+
+Claude Desktop’s config file only launches **local** (stdio) processes. With `npm start` running, bridge to localhost HTTP with `mcp-remote`.
+
+Open or create the config via Settings → Developer → Edit Config (`claude_desktop_config.json`):
+
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- Linux: `~/.config/Claude/claude_desktop_config.json`
 
 ```json
 {
@@ -49,15 +57,17 @@ Claude Desktop’s config file only launches **local** (stdio) processes. Point 
 }
 ```
 
-Config file (`claude_desktop_config.json`):
+Do not use Customize → Connectors for localhost: that flow connects from Anthropic’s cloud, which cannot reach `127.0.0.1` on your machine.
 
-- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
-- Linux: `~/.config/Claude/claude_desktop_config.json`
+### Remote server
 
-Open or create it via Settings → Developer → Edit Config.
+After the server is on a **public HTTPS** URL (for example `https://your-domain/mcp`):
 
-Once the server is on a public HTTPS URL, you can skip `mcp-remote` and add it as a **custom connector** (Customize → Connectors → Add custom connector). Claude then reaches the server from Anthropic’s cloud, not from your laptop. Free plans allow one custom connector.
+1. In Claude Desktop open **Customize → Connectors → Add custom connector**.
+2. Paste the HTTPS MCP URL. No `mcp-remote` and no JSON edit.
+3. Anthropic’s cloud opens the connection, so the VPS must be reachable on the public internet. Add auth before it is public.
+
+Free plans allow one custom connector. Restart Claude Desktop after adding it.
 
 ## Catalog
 
