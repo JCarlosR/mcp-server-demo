@@ -7,6 +7,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Laravel",
+      "priority": 7,
       "pitch": "Aprende Laravel desde cero y desarrolla aplicaciones web reales, en tiempo récord, de la mano de Laravel.",
       "description": "Aprende Laravel desarrollando una aplicación de pedidos en línea, desde cero y paso a paso. El curso explica el desarrollo, y culmina con la publicación de la aplicación web (deploy a un servidor y cómo asociar un dominio).",
       "topics": [
@@ -47,6 +48,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Laravel",
+      "priority": 9,
       "pitch": "Veamos cómo implementar un login mediante redes sociales! Aprende y aplica esto sobre cualquier proyecto Laravel.",
       "description": "Desarrollemos un monitor de precios! Los usuarios ingresan vía redes sociales, ingresan datos y consultan reportes.",
       "topics": [
@@ -77,6 +79,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Python",
+      "priority": 10,
       "pitch": "Desarrolla tu primer Chatbot para Facebook Messenger sobre Google Cloud, y aprende Python en el camino!",
       "description": "Desarrolla tu primer Chatbot usando Python, Google Cloud Storage y Google App Engine",
       "topics": [
@@ -99,12 +102,13 @@
       ]
     },
     {
-      "title": "Javascript 2024: El curso práctico y completo",
+      "title": "Javascript 2026: El curso práctico y completo",
       "short_name": "Aprende Javascript",
       "url": "https://programacionymas.com/series/javascript-curso-practico-y-completo",
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Javascript",
+      "priority": 1,
       "pitch": "Domina JS con este curso práctico y completo! Fundamentos, ejemplos reales, ES6+, POO, Ajax, Webpack, NPM y más.",
       "description": "Domina Javascript desarrollando 3 juegos! Aprende ES6+, POO, Módulos, Ajax, Webpack, Babel, NPM y muchos más conceptos.",
       "topics": [
@@ -114,7 +118,8 @@
         "webpack",
         "npm",
         "ajax",
-        "poo"
+        "poo",
+        "desarrollo web"
       ],
       "audience": [
         "Personas interesadas en aprender a programar con Javascript",
@@ -135,6 +140,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Herramientas",
+      "priority": 4,
       "pitch": "Aprende por qué es importante y cómo funciona Docker, con este nuevo curso práctico!",
       "description": "Aprende por qué es importante, cómo funciona, y cómo empezar usar Docker en tus proyectos!",
       "topics": [
@@ -166,6 +172,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Laravel",
+      "priority": 8,
       "pitch": "Desarrollemos un Messenger! Aprende sobre Channels, Queues, Vuex, JWT, Sesiones, BootstrapVue y mucho más.",
       "description": "Desarrollemos una app completa! Aprende sobre Channels, Queues, Vuex, JWT, Sesiones, BootstrapVue y mucho más.",
       "topics": [
@@ -198,6 +205,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Android",
+      "priority": 5,
       "pitch": "Curso intensivo. Incluye el desarrollo de una API, su consumo, y autenticación vía JWT. También vemos Kotlin desde 0.",
       "description": "Desarrollemos 1 app de Reserva de Citas! Gestión, reportes, API, JWT, notificaciones, Programación Funcional y mucho más",
       "topics": [
@@ -228,6 +236,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Laravel",
+      "priority": 6,
       "pitch": "Actualiza tus proyectos desde cualquier versión hasta la última versión estable de Laravel.",
       "description": "Aprende a actualizar tus proyectos Laravel, desde la versión en la que se encuentran hasta la última versión estable.",
       "topics": [
@@ -255,6 +264,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Frontend",
+      "priority": 2,
       "pitch": "Nuevo curso! Aprende Vite, Pinia, Vuetify, Vue Router y TypeScript. Desarrolla un eCommerce desde cero.",
       "description": "Aprende Vue.js, Vuetify y TS desarrollando un eCcommerce, con las mejores prácticas de desarrollo.",
       "topics": [
@@ -265,7 +275,9 @@
         "pinia",
         "vuetify",
         "typescript",
-        "ecommerce"
+        "ecommerce",
+        "desarrollo web",
+        "javascript"
       ],
       "audience": [
         "Desarrolladores web que quieren dar el siguiente paso en su carrera",
@@ -287,6 +299,7 @@
       "level": "Aprendiz",
       "level_en": "beginner",
       "skill": "Bases de datos",
+      "priority": 3,
       "pitch": "Aprende SQL y Bases de datos. Curso totalmente práctico. Usa JOINs, subqueries, UNION, y mucho más.",
       "description": "Todo lo que necesitas saber para Consultar y Gestionar bases de datos. Aprende SQL y mejora tus oportunidades profesionales.",
       "topics": [

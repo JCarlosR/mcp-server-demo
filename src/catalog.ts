@@ -12,6 +12,7 @@ export type Course = {
   topics: string[];
   audience: string[];
   learn: string[];
+  priority: number;
 };
 
 const catalog = JSON.parse(
@@ -83,7 +84,7 @@ export function recommendCourses(topic: string, level?: string, limit = 5): Cour
       return { course, score };
     })
     .filter((row) => row.score > 0)
-    .sort((a, b) => b.score - a.score || a.course.title.localeCompare(b.course.title));
+    .sort((a, b) => a.course.priority - b.course.priority);
 
   return scored.slice(0, limit).map((row) => row.course);
 }
