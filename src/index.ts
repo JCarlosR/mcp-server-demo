@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { createServer as createHttpServer } from "node:http";
 import {
-  localhostHostValidation,
-  localhostOriginValidation,
+  hostHeaderValidation,
+  originValidation,
   toNodeHandler,
 } from "@modelcontextprotocol/node";
 import { createMcpHandler } from "@modelcontextprotocol/server";
@@ -10,11 +10,20 @@ import { createServer } from "./server.js";
 
 const port = Number(process.env.PORT ?? 3000);
 const host = process.env.HOST ?? "127.0.0.1";
+const allowedHostnames = [
+  "localhost",
+  "127.0.0.1",
+  "[::1]",
+  ...(process.env.MCP_ALLOWED_HOSTS ?? "")
+    .split(",")
+    .map((name) => name.trim())
+    .filter(Boolean),
+];
 
 const mcpHandler = createMcpHandler(createServer);
 const nodeHandler = toNodeHandler(mcpHandler);
-const validateHost = localhostHostValidation();
-const validateOrigin = localhostOriginValidation();
+const validateHost = hostHeaderValidation(allowedHostnames);
+const validateOrigin = originValidation(allowedHostnames);
 
 const httpServer = createHttpServer(async (req, res) => {
   if (!validateHost(req, res) || !validateOrigin(req, res)) {
