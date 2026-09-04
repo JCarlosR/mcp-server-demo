@@ -118,7 +118,47 @@ npx pm2 save
 npx pm2 startup
 ```
 
-5. Reverse-proxy with nginx: `https://your-domain/mcp` → `http://127.0.0.1:3000/mcp`. Issue a TLS certificate (certbot). Do not expose port 3000 on the public firewall.
+5. Reverse-proxy with nginx so `https://your-domain/mcp` reaches Node on `http://127.0.0.1:3000/mcp`. Replace `mcp.example.com` with your hostname. DNS for that name must already point at the VPS.
+
+```bash
+sudo tee /etc/nginx/sites-available/mcp-server-demo >/dev/null <<'EOF'
+server {
+    listen 80;
+    listen [::]:80;
+    server_name mcp.example.com;
+
+    location /mcp {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_read_timeout 300s;
+    }
+}
+EOF
+
+sudo ln -sf /etc/nginx/sites-available/mcp-server-demo /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+Issue a Let's Encrypt certificate (certbot will add HTTPS to that site):
+
+```bash
+sudo certbot --nginx -d mcp.example.com
+```
+
+Leave port **3000** closed on the firewall. Only **22**, **80**, and **443** need to be public:
+
+```bash
+sudo ufw allow OpenSSH
+sudo ufw allow 'Nginx Full'
+sudo ufw enable
+```
+
 6. Put auth in front of the public URL before you share it (Claude Connectors and a token/OAuth). Then add the HTTPS URL in Claude (**Remote server** above) or in Cursor’s `url` field.
 
 If Connectors return 403, add the hostname from the request (your domain, and any `Origin` host Claude sends) to `MCP_ALLOWED_HOSTS` in `.env`, comma-separated, then restart.
