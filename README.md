@@ -7,10 +7,11 @@ Tools:
 - `current_time` — current date and time in America/Lima
 - `recommend_courses` — Programación y Más paid courses, matched by topic, skill, or level
 
-Requires **Node.js 20+** (see `.nvmrc`).
+Requires **Node.js 20+** (see `.nvmrc`). Copy `.env.example` to `.env` for local defaults (optional; the same values are already built in).
 
 ```bash
 nvm use
+cp .env.example .env
 npm install
 npm run build
 npm start
@@ -71,24 +72,40 @@ After you deploy a public HTTPS URL, use that `url` instead of localhost.
 
 ## Deploy to a VPS
 
-A [Hostinger VPS](https://hostinger.com/PROGRAMACIONYMAS) works well for this (Node + nginx + a process manager). That link applies coupon **`PROGRAMACIONYMAS`**.
+A [Hostinger VPS](https://hostinger.com/PROGRAMACIONYMAS) works well for this (Node + nginx + a process manager). That link applies coupon **`PROGRAMACIONYMAS`**. Choose **KVM 2** (2 vCPU, 8 GB RAM) and **Ubuntu**. A fresh KVM 2 image does not include Node or npm.
 
-1. Create the VPS (Ubuntu is fine), point a domain at its IP, and SSH in.
-2. Install **Node.js 20+**, git, nginx, and certbot.
+1. Create the VPS, point a domain at its IP, and SSH in.
+2. Install git, nginx, certbot, then **nvm** and **Node.js 20** (same major as `.nvmrc`):
+
+```bash
+sudo apt update
+sudo apt install -y git nginx certbot python3-certbot-nginx curl
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm install 20
+nvm use 20
+node -v
+npm -v
+```
+
+Add `source ~/.nvm/nvm.sh` to `~/.bashrc` if `node` is missing after a new SSH session.
+
 3. Clone this repo, then:
 
 ```bash
 cd mcp-server-demo
+cp .env.example .env
 npm ci
 npm run build
 ```
 
-4. Keep Node listening only on this machine (`127.0.0.1`). `MCP_ALLOWED_HOSTS` is the **public domain** you pointed at the VPS (hostname only, no `https://`). Nginx and Claude will send that name in the HTTP `Host` header; without it the app rejects the request as unknown.
+4. Keep Node listening only on this machine (`127.0.0.1`). In `.env`, set `MCP_ALLOWED_HOSTS` to the **public domain** you pointed at the VPS (hostname only, no `https://`). Nginx and Claude will send that name in the HTTP `Host` header; without it the app rejects the request as unknown.
 
 ```bash
-export HOST=127.0.0.1
-export PORT=3000
-export MCP_ALLOWED_HOSTS=mcp.example.com
+HOST=127.0.0.1
+PORT=3000
+MCP_ALLOWED_HOSTS=mcp.example.com
 ```
 
 Example: if the server will be `https://mcp.programacionymas.com/mcp`, set `MCP_ALLOWED_HOSTS=mcp.programacionymas.com`.
@@ -104,7 +121,7 @@ npx pm2 startup
 5. Reverse-proxy with nginx: `https://your-domain/mcp` → `http://127.0.0.1:3000/mcp`. Issue a TLS certificate (certbot). Do not expose port 3000 on the public firewall.
 6. Put auth in front of the public URL before you share it (Claude Connectors and a token/OAuth). Then add the HTTPS URL in Claude (**Remote server** above) or in Cursor’s `url` field.
 
-If Connectors return 403, add the hostname from the request (your domain, and any `Origin` host Claude sends) to `MCP_ALLOWED_HOSTS`, comma-separated, then restart.
+If Connectors return 403, add the hostname from the request (your domain, and any `Origin` host Claude sends) to `MCP_ALLOWED_HOSTS` in `.env`, comma-separated, then restart.
 
 ## Catalog
 
